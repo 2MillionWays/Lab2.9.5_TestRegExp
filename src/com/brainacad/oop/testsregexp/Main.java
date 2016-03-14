@@ -17,7 +17,7 @@ public class Main {
     }
     public static boolean checkPersonWithRegExp(String userNameString){
 
-        String upperCase = "[A-Z]+\\D[a-z]+";
+        String upperCase = "[A-Z]+\\D[a-z]+";   //you can just use [A-Z][a-z]+
 
         Pattern pattern = Pattern.compile(upperCase);
         Matcher matcher = pattern.matcher(userNameString);
